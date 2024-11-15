@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'all_expenses_header.dart';
-import 'all_expenses_items_list_view.dart';
 
-class AllExpenses extends StatelessWidget {
-  const AllExpenses({super.key});
+class QuickInvoice extends StatelessWidget {
+  const QuickInvoice({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,12 +12,7 @@ class AllExpenses extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
       ),
       child: const Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          AllExpensesHeader(),
-          SizedBox(height: 16),
-          Expanded(child: AllExpensesItemsListView()),
-        ],
+        children: [],
       ),
     );
   }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/widgets/all_expenses.dart';
+
 import 'package:responsive_dashboard/widgets/custom_drawer.dart';
+
+import 'all_expensess_and_quick_invoice_section.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {
   const DashboardDesktopLayout({super.key});
@@ -13,22 +15,11 @@ class DashboardDesktopLayout extends StatelessWidget {
         SizedBox(width: 32),
         Expanded(
           flex: 3,
-          child: MiddlePart(),
+          child: AllExpensessAndQuickInvoiceSection(),
         )
       ],
     );
   }
 }
 
-class MiddlePart extends StatelessWidget {
-  const MiddlePart({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        Expanded(child: AllExpenses()),
-      ],
-    );
-  }
-}
