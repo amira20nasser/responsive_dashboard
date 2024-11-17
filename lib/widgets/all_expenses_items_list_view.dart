@@ -58,9 +58,12 @@ class _AllExpensesItemsListViewState extends State<AllExpensesItemsListView> {
                     index = e.key;
                   });
                 },
-                child: AllExpensesItem(
-                  allExpensesItemModel: e.value,
-                  isActive: index == e.key,
+                child: AspectRatio(
+                  aspectRatio: 180 / 216,
+                  child: AllExpensesItem(
+                    allExpensesItemModel: e.value,
+                    isActive: index == e.key,
+                  ),
                 ),
               ),
             ),
