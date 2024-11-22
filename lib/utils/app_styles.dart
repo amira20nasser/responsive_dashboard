@@ -1,5 +1,4 @@
 import 'dart:developer';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_dashboard/utils/size_config.dart';
 
@@ -72,9 +71,13 @@ abstract class AppStyles {
       );
 }
 
-//Scale Factor =  width / plateform
-// Responsive font size = basefontSize * Scale Factor
-// (min , max) fontsize
+//1.Scale Factor =  width / plateform_width_break_point
+// if plateform_width_break_point. is Mobile i choose break point to determine width is incressing or decreasing
+// mobile < 800 -> 400
+// 800<= tablet < 1300 -> 1050
+// 1300<= desktop ->  2000
+//2. Responsive font size = basefontSize * Scale Factor
+//3. (min , max) fontsize
 double getResponsiveFontSize(
   BuildContext context, {
   required double baseFontSize,
@@ -91,15 +94,16 @@ double getResponsiveFontSize(
 // if web you must use MediaQuery as user can change the width
 
 double getScaleFactor(BuildContext context) {
-  var dispatcher = PlatformDispatcher.instance;
-  var physicalWidth = dispatcher.views.first.physicalSize.width;
-  var devicePixelRatio = dispatcher.views.first.devicePixelRatio;
-  var width = physicalWidth / devicePixelRatio;
-  // double width = MediaQuery.sizeOf(context).width;
+  // var dispatcher = PlatformDispatcher.instance;
+  // var physicalWidth = dispatcher.views.first.physicalSize.width;
+  // var devicePixelRatio = dispatcher.views.first.devicePixelRatio;
+  // var width = physicalWidth / devicePixelRatio;
+  double width = MediaQuery.sizeOf(context).width;
+  log(width.toString());
   if (width < SizeConfig.tablet) {
-    return width / 550;
+    return width / 520;
   } else if (width < SizeConfig.desktop) {
-    return width / 1000;
+    return width / 1050;
   }
   return width / 2000;
 }

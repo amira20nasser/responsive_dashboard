@@ -17,10 +17,16 @@ class DrawerItem extends StatelessWidget {
     return ListTile(
       leading: SvgPicture.asset(drawerItemModel.image),
       title: AnimatedDefaultTextStyle(
-        style: isActive ? AppStyles.styleBold16(context) : AppStyles.styleRegular16(context),
+        style: isActive
+            ? AppStyles.styleBold16(context)
+            : AppStyles.styleRegular16(context),
         duration: const Duration(milliseconds: 400),
-        child: Text(
-          drawerItemModel.title,
+        child: FittedBox(
+          alignment: AlignmentDirectional.centerStart,
+          fit: BoxFit.scaleDown,
+          child: Text(
+            drawerItemModel.title,
+          ),
         ),
       ),
       trailing: AnimatedContainer(

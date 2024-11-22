@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -27,12 +26,14 @@ class MyCardItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             ListTile(
-              contentPadding:const  EdgeInsets.only(left: 31, right: 42, top: 16),
+              contentPadding:
+                  const EdgeInsets.only(left: 31, right: 42, top: 16),
               title: Text(
                 "Name card",
-                style: AppStyles.styleRegular16(context).copyWith(color: Colors.white),
+                style: AppStyles.styleRegular16(context)
+                    .copyWith(color: Colors.white),
               ),
-              subtitle:  Text(
+              subtitle: Text(
                 "Syah Bandi",
                 style: AppStyles.styleMedium20(context),
               ),
@@ -52,8 +53,8 @@ class MyCardItem extends StatelessWidget {
                   ),
                   Text(
                     "12/20 - 124",
-                    style:
-                        AppStyles.styleRegular16(context).copyWith(color: Colors.white),
+                    style: AppStyles.styleRegular16(context)
+                        .copyWith(color: Colors.white),
                   ),
                 ],
               ),
