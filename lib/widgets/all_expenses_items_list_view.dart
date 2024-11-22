@@ -48,22 +48,19 @@ class _AllExpensesItemsListViewState extends State<AllExpensesItemsListView> {
           var item = e.value;
           return Expanded(
             child: InkWell(
-                onTap: () {
-                  setState(() {
-                    selectedIndex = index;
-                  });
-                },
-                child: AspectRatio(
-                  aspectRatio: 180 / 216,
-                  child: Padding(
-                    padding:
-                        EdgeInsets.symmetric(horizontal: index == 1 ? 12 : 0),
-                    child: AllExpensesItem(
-                      allExpensesItemModel: item,
-                      isActive: selectedIndex == index,
-                    ),
-                  ),
-                )),
+              onTap: () {
+                setState(() {
+                  selectedIndex = index;
+                });
+              },
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: index == 1 ? 12 : 0),
+                child: AllExpensesItem(
+                  allExpensesItemModel: item,
+                  isActive: selectedIndex == index,
+                ),
+              ),
+            ),
           );
         },
       ).toList(),

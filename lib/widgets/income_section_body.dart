@@ -26,10 +26,7 @@ class IncomSectionBody extends StatelessWidget {
         : const Row(
             children: [
               Expanded(
-                child: Padding(
-                  padding: EdgeInsets.only(right: 8.0),
-                  child: IncomeChart(),
-                ),
+                child: IncomeChart(),
               ),
               Expanded(flex: 2, child: IncomeDetails()),
             ],

@@ -41,7 +41,7 @@ class MyCardItem extends StatelessWidget {
             ),
             const Spacer(),
             Padding(
-              padding: const EdgeInsets.only(right: 24.0, bottom: 27),
+              padding: const EdgeInsets.only(right: 24.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -58,6 +58,9 @@ class MyCardItem extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+            const Flexible(
+              child: SizedBox(height: 26),
             ),
           ],
         ),

@@ -18,18 +18,32 @@ class AllExpensesItemBody extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          title,
-          style: AppStyles.styleSemiBold16(context).copyWith(color: textColor),
+        FittedBox(
+          alignment: AlignmentDirectional.centerStart,
+          fit: BoxFit.scaleDown,
+          child: Text(
+            title,
+            style:
+                AppStyles.styleSemiBold16(context).copyWith(color: textColor),
+          ),
         ),
-        Text(
-          date,
-          style: AppStyles.styleRegular14(context).copyWith(color: textColor),
+        FittedBox(
+          alignment: AlignmentDirectional.centerStart,
+          fit: BoxFit.scaleDown,
+          child: Text(
+            date,
+            style: AppStyles.styleRegular14(context).copyWith(color: textColor),
+          ),
         ),
         const SizedBox(height: 16),
-        Text(
-          NumberFormat.currency(symbol: '\$', decimalDigits: 0).format(price),
-          style: AppStyles.styleSemiBold24(context).copyWith(color: textColor),
+        FittedBox(
+          alignment: AlignmentDirectional.centerStart,
+          fit: BoxFit.scaleDown,
+          child: Text(
+            NumberFormat.currency(symbol: '\$', decimalDigits: 0).format(price),
+            style:
+                AppStyles.styleSemiBold24(context).copyWith(color: textColor),
+          ),
         ),
       ],
     );

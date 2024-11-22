@@ -1,7 +1,6 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
-
 import 'custom_circular_icon.dart';
 
 class AllExpensesItemHeader extends StatelessWidget {
@@ -18,7 +17,12 @@ class AllExpensesItemHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        CustomCircularIcon(colorBackGround: colorBackGround, image: image, colorImage: colorImage),
+        CustomCircularIcon(
+          colorBackGround: colorBackGround,
+          image: image,
+          colorImage: colorImage,
+        ),
+        // const Spacer(),
         Transform.rotate(
           angle: -180 * (math.pi / 180),
           child: Icon(
