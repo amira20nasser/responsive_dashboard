@@ -36,7 +36,7 @@ class AllExpensesItemsListView extends StatefulWidget {
 }
 
 class _AllExpensesItemsListViewState extends State<AllExpensesItemsListView> {
-  int index = 1;
+  int selectedIndex = 1;
   @override
   Widget build(BuildContext context) {
     //other method
@@ -44,32 +44,26 @@ class _AllExpensesItemsListViewState extends State<AllExpensesItemsListView> {
     return Row(
       children: AllExpensesItemsListView.items.asMap().entries.map(
         (e) {
+          int index = e.key;
+          var item = e.value;
           return Expanded(
             child: InkWell(
-              onTap: () {
-                setState(() {
-                  index = e.key;
-                });
-              },
-              child: e.key == 1
-                  ? Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 12),
-                      child: AspectRatio(
-                        aspectRatio: 180 / 216,
-                        child: AllExpensesItem(
-                          allExpensesItemModel: e.value,
-                          isActive: index == e.key,
-                        ),
-                      ),
-                    )
-                  : AspectRatio(
-                      aspectRatio: 180 / 216,
-                      child: AllExpensesItem(
-                        allExpensesItemModel: e.value,
-                        isActive: index == e.key,
-                      ),
+                onTap: () {
+                  setState(() {
+                    selectedIndex = index;
+                  });
+                },
+                child: AspectRatio(
+                  aspectRatio: 180 / 216,
+                  child: Padding(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: index == 1 ? 12 : 0),
+                    child: AllExpensesItem(
+                      allExpensesItemModel: item,
+                      isActive: selectedIndex == index,
                     ),
-            ),
+                  ),
+                )),
           );
         },
       ).toList(),

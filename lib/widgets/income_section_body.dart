@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 import '../utils/size_config.dart';
@@ -12,17 +14,23 @@ class IncomSectionBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(MediaQuery.sizeOf(context).width);
+    log(MediaQuery.sizeOf(context).width.toString());
     double width = MediaQuery.sizeOf(context).width;
     return width >= SizeConfig.desktop && width < 1750
-        ? Expanded(
+        ? const Expanded(
             child: Padding(
-            padding: const EdgeInsets.all(32.0),
-            child: const DetailedIncomeChart(),
-          ))
+              padding: EdgeInsets.all(32.0),
+              child: DetailedIncomeChart(),
+            ),
+          )
         : const Row(
             children: [
-              Expanded(child: IncomeChart()),
+              Expanded(
+                child: Padding(
+                  padding: EdgeInsets.only(right: 8.0),
+                  child: IncomeChart(),
+                ),
+              ),
               Expanded(flex: 2, child: IncomeDetails()),
             ],
           );

@@ -20,16 +20,16 @@ class AllExpensesItemBody extends StatelessWidget {
       children: [
         Text(
           title,
-          style: AppStyles.styleSemiBold16.copyWith(color: textColor),
+          style: AppStyles.styleSemiBold16(context).copyWith(color: textColor),
         ),
         Text(
           date,
-          style: AppStyles.styleRegular14.copyWith(color: textColor),
+          style: AppStyles.styleRegular14(context).copyWith(color: textColor),
         ),
         const SizedBox(height: 16),
         Text(
           NumberFormat.currency(symbol: '\$', decimalDigits: 0).format(price),
-          style: AppStyles.styleSemiBold24.copyWith(color: textColor),
+          style: AppStyles.styleSemiBold24(context).copyWith(color: textColor),
         ),
       ],
     );

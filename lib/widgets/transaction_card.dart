@@ -16,18 +16,18 @@ class TransactionHistoryCard extends StatelessWidget {
         contentPadding: const EdgeInsets.all(16),
         title: Text(
           transaction.title,
-          style: AppStyles.styleSemiBold16,
+          style: AppStyles.styleSemiBold16(context),
         ),
         subtitle: Text(
           transaction.date,
-          style: AppStyles.styleRegular16.copyWith(
+          style: AppStyles.styleRegular16(context).copyWith(
             color: const Color(0xffAAAAAA),
           ),
         ),
         trailing: Text(
           NumberFormat.currency(symbol: '\$', decimalDigits: 0)
               .format(transaction.price),
-          style: AppStyles.styleSemiBold20.copyWith(
+          style: AppStyles.styleSemiBold20(context).copyWith(
             color: transaction.type == TransactionType.withdraw
                 ? const Color(0xffF3735E)
                 : const Color(0xff7DD97B),

@@ -50,14 +50,14 @@ class TransactionHistoryHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        const Text(
+        Text(
           "Transaction History",
-          style: AppStyles.styleSemiBold20,
+          style: AppStyles.styleSemiBold20(context),
         ),
         Text(
           "See all",
           style:
-              AppStyles.styleRegular16.copyWith(color: const Color(0xff4EB7F2)),
+              AppStyles.styleRegular16(context).copyWith(color: const Color(0xff4EB7F2)),
         ),
       ],
     );

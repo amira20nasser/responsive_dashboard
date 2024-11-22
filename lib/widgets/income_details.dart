@@ -69,11 +69,11 @@ class IncomeItemDetails extends StatelessWidget {
       ),
       title: Text(
         title,
-        style: AppStyles.styleRegular16,
+        style: AppStyles.styleRegular16(context),
       ),
       trailing: Text(
         "%${(precentage * 100).toInt()}",
-        style: AppStyles.styleMedium16,
+        style: AppStyles.styleMedium16(context),
       ),
     );
   }

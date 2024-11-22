@@ -80,7 +80,7 @@ class _IncomeChartState extends State<DetailedIncomeChart> {
       radius: activeIndex == itemIndex ? 60 : 50,
       title: activeIndex == itemIndex ? title : "$value%",
       titlePositionPercentageOffset: activeIndex == itemIndex ? -1.1 : null,
-      titleStyle: AppStyles.styleMedium16
+      titleStyle: AppStyles.styleMedium16(context)
           .copyWith(color: activeIndex == itemIndex ? null : Colors.white),
     );
   }
