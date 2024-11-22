@@ -16,8 +16,8 @@ class MyCardAndTransactionHistory extends StatelessWidget {
         children: [
           MyCards(),
           Divider(
-            color: Color(0xFFF1F1F1),
             height: 40,
+            color: Color(0xFFF1F1F1),
           ),
           TransactionHistory(),
         ],

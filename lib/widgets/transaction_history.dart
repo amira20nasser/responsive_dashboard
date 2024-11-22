@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
 import '../models/tansaction_model.dart';
 import '../utils/app_styles.dart';
-import 'transaction_card.dart';
 import 'transaction_history_listview.dart';
 
 class TransactionHistory extends StatelessWidget {
@@ -65,10 +63,3 @@ class TransactionHistoryHeader extends StatelessWidget {
     );
   }
 }
-//  TransactionHistoryCard(
-//           transaction: TransactionModel(
-//               title: "title",
-//               date: "date",
-//               price: 20129,
-//               type: TransactionType.withdraw),
-//         ),

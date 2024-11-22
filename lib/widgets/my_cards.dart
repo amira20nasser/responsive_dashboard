@@ -29,7 +29,7 @@ class _MyCardsState extends State<MyCards> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
+        const Text(
           "My Card",
           style: AppStyles.styleSemiBold20,
         ),

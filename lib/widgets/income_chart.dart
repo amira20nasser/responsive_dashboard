@@ -23,7 +23,9 @@ class _IncomeChartState extends State<IncomeChart> {
   PieChartData getChartData() {
     return PieChartData(
       sectionsSpace: 0,
+      
       pieTouchData: PieTouchData(
+        
         enabled: true,
         touchCallback: (p0, pieTouchResponse) {
           activeIndex =
@@ -33,28 +35,28 @@ class _IncomeChartState extends State<IncomeChart> {
       ),
       sections: [
         PieChartSectionData(
-          value: 0.4,
+          value: 40,
           title: "Design service",
           radius: activeIndex == 0 ? 60 : 50,
           color: const Color(0xff208CC8),
           showTitle: false,
         ),
         PieChartSectionData(
-          value: 0.25,
+          value: 25,
           title: "Design product",
           radius: activeIndex == 1 ? 60 : 50,
           color: const Color(0xff4EB7F2),
           showTitle: false,
         ),
         PieChartSectionData(
-          value: 0.2,
+          value: 20,
           title: "Product royalti",
           radius: activeIndex == 2 ? 60 : 50,
           color: const Color(0xff064061),
           showTitle: false,
         ),
         PieChartSectionData(
-          value: 0.22,
+          value: 22,
           title: "Others",
           radius: activeIndex == 3 ? 60 : 50,
           color: const Color(0xffE2DECD),

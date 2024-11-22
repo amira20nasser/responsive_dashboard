@@ -27,4 +27,3 @@ class QuickInvoice extends StatelessWidget {
     );
   }
 }
-

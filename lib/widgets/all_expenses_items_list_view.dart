@@ -36,7 +36,7 @@ class AllExpensesItemsListView extends StatefulWidget {
 }
 
 class _AllExpensesItemsListViewState extends State<AllExpensesItemsListView> {
-  int index = 0;
+  int index = 1;
   @override
   Widget build(BuildContext context) {
     //other method
@@ -44,28 +44,31 @@ class _AllExpensesItemsListViewState extends State<AllExpensesItemsListView> {
     return Row(
       children: AllExpensesItemsListView.items.asMap().entries.map(
         (e) {
-          double padding = 0;
-
-          if (e.key == 1) {
-            padding = 12;
-          }
           return Expanded(
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: padding),
-              child: InkWell(
-                onTap: () {
-                  setState(() {
-                    index = e.key;
-                  });
-                },
-                child: AspectRatio(
-                  aspectRatio: 180 / 216,
-                  child: AllExpensesItem(
-                    allExpensesItemModel: e.value,
-                    isActive: index == e.key,
-                  ),
-                ),
-              ),
+            child: InkWell(
+              onTap: () {
+                setState(() {
+                  index = e.key;
+                });
+              },
+              child: e.key == 1
+                  ? Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 12),
+                      child: AspectRatio(
+                        aspectRatio: 180 / 216,
+                        child: AllExpensesItem(
+                          allExpensesItemModel: e.value,
+                          isActive: index == e.key,
+                        ),
+                      ),
+                    )
+                  : AspectRatio(
+                      aspectRatio: 180 / 216,
+                      child: AllExpensesItem(
+                        allExpensesItemModel: e.value,
+                        isActive: index == e.key,
+                      ),
+                    ),
             ),
           );
         },
