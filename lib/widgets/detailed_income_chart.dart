@@ -13,22 +13,22 @@ class _IncomeChartState extends State<DetailedIncomeChart> {
   int activeIndex = -1;
   static const data = [
     {
-      "value": 40,
+      "value": 40.0,
       "title": "Design service",
       "color": 0xff208CC8,
     },
     {
-      "value": 25,
+      "value": 25.0,
       "title": "Design product",
       "color": 0xff4EB7F2,
     },
     {
-      "value": 20,
+      "value": 20.0,
       "title": "Product royalti",
       "color": 0xff064061,
     },
     {
-      "value": 15,
+      "value": 15.0,
       "title": "Others",
       "color": 0xffE2DECD,
     },

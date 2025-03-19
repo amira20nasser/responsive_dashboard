@@ -1,16 +1,44 @@
-# responsive_dashboard
+# Responsive Dashboard
+This project showcases a fully responsive UI designed for various mobile devices.
 
-A new Flutter project.
+## 📱 Demonstration Videos
 
-## Getting Started
+Below are videos demonstrating the UI on different mobile devices:
 
-This project is a starting point for a Flutter application.
+### 1️⃣ Mobile Device 1
+<video width="200" controls>
+  <source src="demo/bigmobile.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-A few resources to get you started if this is your first Flutter project:
+### 2️⃣ Tablet Device 2
+<video width="200" controls>
+  <source src="demo/tablet.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 3️⃣ Tablet Device 3
+<video width="500" controls>
+  <source src="demo/tablet2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+### 4️⃣ desktop Device 4
+
+<video width="500" controls>
+  <source src="demo/desktop.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+## 🚀 Features
+- Adaptive UI for various screen sizes
+- Smooth transitions and animations
+- Optimized performance for different resolutions
+
+## 📧 Contact
+For any issues or suggestions, feel free to reach out at
+- 💼 [LinkedIn](https://www.linkedin.com/in/amira-nasser-sayed/)  
+- 📧 Email: amira20nasser@gmail.com
+
