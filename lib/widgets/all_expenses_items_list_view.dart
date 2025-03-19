@@ -54,7 +54,7 @@ class _AllExpensesItemsListViewState extends State<AllExpensesItemsListView> {
                 });
               },
               child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: index == 1 ? 12 : 0),
+                padding: const EdgeInsets.only(right: 6),
                 child: AllExpensesItem(
                   allExpensesItemModel: item,
                   isActive: selectedIndex == index,
@@ -75,7 +75,8 @@ class _AllExpensesItemsListViewState extends State<AllExpensesItemsListView> {
     //       child: AspectRatio(
     //         aspectRatio: 180 / 216,
     //         child: AllExpensesItem(
-    //           allExpensesItemModel: items[index],
+    //           isActive: selectedIndex == index,
+    //           allExpensesItemModel: AllExpensesItemsListView.items[index],
     //         ),
     //       ),
     //     );
