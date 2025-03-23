@@ -6,30 +6,10 @@ This project showcases a fully responsive UI designed for various mobile devices
 Below are videos demonstrating the UI on different mobile devices:
 
 ### 1️⃣ Mobile Device 1
-<video width="200" controls>
-  <source src="demo/bigmobile.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/2a61d17f-20b9-45bb-9417-044df38b867d
 
 ### 2️⃣ Tablet Device 2
-<video width="200" controls>
-  <source src="demo/tablet.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-### 3️⃣ Tablet Device 3
-<video width="500" controls>
-  <source src="demo/tablet2.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-
-### 4️⃣ desktop Device 4
-
-<video width="500" controls>
-  <source src="demo/desktop.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/98b9014c-6d82-4859-8053-7af0147a4992
 
 
 ## 🚀 Features
