@@ -5,12 +5,14 @@ This project showcases a fully responsive UI designed for various mobile devices
 
 Below are videos demonstrating the UI on different mobile devices:
 
+  
+<div class="row">
+  <div class="column">
+    <img height=400px src="demo/preview.png" alt="Video preview image">
+<!--     <img height=400px src="demo/preview.png" alt="Video preview image">
+  </div> -->
 
-<video width="100%" controls autoplay loop muted poster="demo/preview.png">
-  <source src="demo/responsive.mp4" type="video/mp4">
-  <img src="demo/preview.png" alt="Video preview image">
-  Your browser does not support the video tag.
-</video>
+</div>
 
 
 
