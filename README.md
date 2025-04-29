@@ -8,9 +8,13 @@ Below are videos demonstrating the UI on different mobile devices:
   
 <div class="row">
   <div class="column">
-    <img height=400px src="demo/preview.png" alt="Video preview image">
-<!--     <img height=400px src="demo/preview.png" alt="Video preview image">
-  </div> -->
+    <img height=300px src="demo/tablet_preview.png" alt="Video preview image">
+    <img height=300px src="demo/mobile.png" alt="Video preview image">
+    <img height=300px src="demo/desktop.png" alt="Video preview image">
+
+
+<!--     <img height=400px src="demo/preview.png" alt="Video preview image">-->
+  </div>
 
 </div>
 
